@@ -26,8 +26,10 @@ function HandlebarsRegisterHelper(hbs) {
 
   hbs.handlebars.registerHelper('getLocalizedField', function (obj, field, lang) {
 
-
-    return lang === 'en' ? obj[`${field}_en`] : obj[field];
+    console.log('====================================');
+    console.log("obj", obj);
+    console.log('====================================');
+    return lang === 'en' ? obj[`${field}_en`] : obj[`${field}`] ;
   });
   hbs.handlebars.registerHelper('getBreadcurmb', function (pathName, lang,slug) {
     const langPath = lang && lang == "en" ? `/${lang}` : "";
