@@ -49,7 +49,7 @@ HandlebarsRegisterHelper(hbs);
 // register new function
 //consfig ENV
 dotenv.config();
-const PORT = 4018;
+const PORT = 4012;
 // console.log(process.env.KEY);
 
 // connection.connect();
